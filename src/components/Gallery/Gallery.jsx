@@ -8,7 +8,7 @@ const Gallery = () => {
                 <p className="py-6 mb-10">Provident cupiditate voluptatem et in. Quaerat <br /> fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                 <img className='w-full h-60' src="https://images.pexels.com/photos/1102360/pexels-photo-1102360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
                 <img className='w-full h-60' src="https://images.pexels.com/photos/385998/pexels-photo-385998.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
                 <img className='w-full h-60' src="https://images.pexels.com/photos/54278/pexels-photo-54278.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
