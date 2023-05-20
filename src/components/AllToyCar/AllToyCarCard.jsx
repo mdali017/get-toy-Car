@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AllToyCarCard = ({ toyCar }) => {
 
+    // const navigate = useNavigate();
+
     const handleViewDetails = id =>{
-           console.log(id);
+        //    console.log(id);
+        //    navigate("/");
     }
 
     // console.log(toyCar)
@@ -21,7 +24,7 @@ const AllToyCarCard = ({ toyCar }) => {
                 <p>Seller Name: {sellerName}</p>
                 <div className="card-actions justify-end">
                 {/* <Navigate to="/toyCar" onClick={() => handleViewDetails(_id)} replace={true} /> */}
-                    <Link to='/toyCar/:id'><button onClick={() => handleViewDetails(_id)} className="btn btn-primary">View Details</button></Link>
+                    <Link to={`/toyCar/${_id}`}><button onClick={() => handleViewDetails(_id)} className="btn btn-primary">View Details</button></Link>
                 </div>
             </div>
         </div>
