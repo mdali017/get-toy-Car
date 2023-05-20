@@ -4,6 +4,7 @@ import { Navigate } from 'react-router-dom';
 
 const PrivateRoutes = ({children}) => {
     const {user} = useContext(AuthContext);
+    // console.log(user)
 
     if(user){
         return children;
