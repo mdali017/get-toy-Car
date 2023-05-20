@@ -13,6 +13,8 @@ import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import AuthProvider from './provider/AuthProvider.jsx';
+import AddAToyCar from './components/AddAToyCar/AddAToyCar.jsx';
+import AllToyCar from './components/AllToyCar/AllToyCar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: 'add-a-toy-car',
+        element: <AddAToyCar></AddAToyCar>
+      },
+      {
+        path: 'all-toy',
+        element: <AllToyCar></AllToyCar>
       },
       {
         path: '/login',
