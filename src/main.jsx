@@ -15,6 +15,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import AuthProvider from './provider/AuthProvider.jsx';
 import AddAToyCar from './components/AddAToyCar/AddAToyCar.jsx';
 import AllToyCar from './components/AllToyCar/AllToyCar.jsx';
+import ViewDetails from './components/AllToyCar/ViewDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: 'all-toy',
         element: <AllToyCar></AllToyCar>
+      },
+      {
+        path: '/toyCar/:id',
+        element: <ViewDetails></ViewDetails>,
+        loader: ({params}) => fetch(`http://localhost:5000/toyCar/${params.id}`)
       },
       {
         path: '/login',
