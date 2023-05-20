@@ -31,7 +31,7 @@ const Blog = () => {
                     <p className='text-left text-black m-1.5'>4. SQL databases are table-based</p>
                     <p className='text-left text-black m-1.5'>5. SQL databases are better for multi-row transactions</p>
                 </div>
-                <div className='w-full border bg-zinc-700  p-10'>
+                <div className='w-full border bg-zinc-600  p-10'>
                     <h1 className='text-3xl font-bold mb-8'>NoSQL databases</h1>
                     <p className='text-left text-black m-1.5'>1. NoSQL databases are non-relational</p>
                     <p className='text-left text-black m-1.5'>2. NoSQL databases have dynamic schemas for unstructured data.</p>
