@@ -6,7 +6,7 @@ const Blog = () => {
             <div className='mt-10'>
                 <h1 className='text-3xl font-bold mb-8 mt-16'>1. What is an access token and refresh token? How do they work and where should we store them on the client-side?</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-full '>
-                    <div className='w-full border bg-zinc-700 p-10'>
+                    <div className='w-full border bg-zinc-600 p-10'>
                         <h1 className='text-3xl font-bold mb-8'>What is an access token?</h1>
                         <p>When a user logins in, the authorization server issues an access token, which is an artifact that client applications can use to make secure calls to an API server. When a client application needs to access protected resources on a server on behalf of a user, the access token lets the client signal to the server that it has received authorization by the user to perform certain tasks or access certain resources.</p>
                         <p>OAuth 2.0 does not define a format for access tokens. At Auth0, for example, access tokens issued for the Management API and access tokens issued for any custom API that you have registered with Auth0 follow the JSON Web Token (JWT) standard. Their basic structure conforms to the typical JWT structure, and they contain standard JWT claims asserted about the token itself</p>
