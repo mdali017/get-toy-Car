@@ -15,7 +15,7 @@ const AllToyCarCard = ({ toyCar }) => {
     const {_id, toyCarName, quantity, sellerName,  price,  subCategory, photourl} = toyCar;
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src={photourl} className='w-full h-60' alt="Shoes" /></figure>
+            <figure><img src={photourl} className='w-full h-60' alt="Toy Car" /></figure>
             <div className="text-left mt-6">
                 <h2 className="card-title">{toyCarName}</h2>
                 <p>Avaiable Quantity: {quantity}</p>
