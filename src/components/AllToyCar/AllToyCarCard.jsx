@@ -16,7 +16,7 @@ const AllToyCarCard = ({ toyCar }) => {
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img src={photourl} className='w-full h-60' alt="Shoes" /></figure>
-            <div className="text-left mt-7">
+            <div className="text-left mt-6">
                 <h2 className="card-title">{toyCarName}</h2>
                 <p>Avaiable Quantity: {quantity}</p>
                 <p>Price: ${price}</p>
