@@ -8,7 +8,7 @@ const ExtraSection = () => {
                     <img  src="https://images.pexels.com/photos/4934420/pexels-photo-4934420.jpeg?auto=compress&cs=tinysrgb&w=600" className=" rounded-lg shadow-2xl" />
                     <div>
                         <h1 className="text-3xl font-bold">Happy Movement With Your Children!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="py-6">Provident cupiditate voluptatem . Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                         <button className="btn btn-primary">Get Started</button>
                     </div>
                 </div>
