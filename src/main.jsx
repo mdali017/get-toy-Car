@@ -17,6 +17,7 @@ import AddAToyCar from './components/AddAToyCar/AddAToyCar.jsx';
 import AllToyCar from './components/AllToyCar/AllToyCar.jsx';
 import ViewDetails from './components/AllToyCar/ViewDetails.jsx';
 import PrivateRoutes from './routes/PrivateRoutes.jsx';
+import MyToyCar from './components/MyToyCar/MyToyCar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,13 +34,17 @@ const router = createBrowserRouter([
         element: <PrivateRoutes><AddAToyCar></AddAToyCar></PrivateRoutes>
       },
       {
-        path: 'all-toy',
+        path: '/all-toy',
         element: <AllToyCar></AllToyCar>
       },
       {
         path: '/toyCar/:id',
         element: <PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/toyCar/${params.id}`)
+        loader: ({params}) => fetch(`https://get-toy-cars-server.vercel.app/toyCar/${params.id}`)
+      },
+      {
+        path: '/my-toy-car',
+        element: <MyToyCar></MyToyCar>
       },
       {
         path: '/login',

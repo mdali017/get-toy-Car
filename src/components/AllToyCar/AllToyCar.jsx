@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import AllToyCarCard from './AllToyCarCard';
+import Home from '../Home/Home';
 
 const AllToyCar = () => {
     const [allToyCar, setAllToyCar] = useState([]);
+    // const [allToyCar1, setAllToyCar1] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/allToyCar')
+        fetch('https://get-toy-cars-server.vercel.app/allToyCar')
         .then(res => res.json())
         .then(data => {
             setAllToyCar(data)
+            
         })
     }, [])
-    
-    // console.log(allToyCar)
 
+    
     return (
         <div>
             <h1>This is All Toy: {allToyCar.length}</h1>
@@ -25,6 +27,7 @@ const AllToyCar = () => {
                         ></AllToyCarCard>)
                 }
             </div>
+            
         </div>
     );
 };

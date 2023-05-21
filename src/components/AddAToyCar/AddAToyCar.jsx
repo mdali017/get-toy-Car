@@ -17,11 +17,10 @@ const AddAToyCar = () => {
         const detailsDescription = form.detailsDescription.value;
         const subCategory = form.subCategory.value;
         const photourl = form.photourl.value;
-        console.log(subCategory)
-
+        
         const newToyCar = {toyCarName, quantity, sellerName, sellerEmail, price, rating, detailsDescription, subCategory, photourl}
 
-        fetch(`http://localhost:5000/addToy`, {
+        fetch(`https://get-toy-cars-server.vercel.app/addToy`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"
